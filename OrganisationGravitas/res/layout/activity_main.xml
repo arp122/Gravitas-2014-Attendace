@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:padding="16dp"
+    android:background="#FFFFFF" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Name*"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The above field is mandatory"
+                android:textColor="#ff2b06"
+                android:id="@+id/tvManName"/>
+            
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Registration Number*"
+                android:textColor="#000000" />
+            <EditText
+                android:id="@+id/etRegNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter You Registration Number"
+                android:paddingBottom="5dp" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The above field is mandatory"
+                android:textColor="#ff2b06"
+                android:id="@+id/tvManRegNo"/>
+            
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Committee*"
+                android:textColor="#000000"/>
+            <Spinner
+                    android:id="@+id/ChoiceSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" 
+                    android:paddingBottom="5dp"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The above field is mandatory"
+                android:textColor="#ff2b06"
+                android:id="@+id/tvManSpin"/>
+            
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Date*"
+                android:textColor="#000000"/>
+            
+           <DatePicker 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/dpDate"
+               android:paddingBottom="5dp"
+               android:layout_gravity="center_horizontal"/>
+           <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The above field is mandatory"
+                android:textColor="#ff2b06"
+                android:id="@+id/tvManDP"/>
+            
+           
+           <TextView	
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Reason"
+                android:textColor="#000000" />
+            <EditText
+                android:id="@+id/etReason"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reason for OD"
+                android:paddingBottom="15dp" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The above field is mandatory"
+                android:textColor="#ff2b06"
+                android:id="@+id/tvManReason"/>
+            
+            
+            <Button 
+                android:id="@+id/btnSubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Submit"
+                android:background="#3b98a7" 
+                android:textColor="#FFFFFF"/>           
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

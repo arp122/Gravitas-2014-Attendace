@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        android:padding="5dp"
+          android:descendantFocusability="blocksDescendants"        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration No" />
+        </LinearLayout>
+
+<ImageButton
+    android:id="@+id/btCheck"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:focusable="false"
+    android:paddingLeft="10dp"
+     android:focusableInTouchMode="true"
+    android:background="@drawable/selector_uncheck" />
+
+    </RelativeLayout>
+
+    
+
+

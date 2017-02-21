@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:padding="5dp" >
+
+       <TextView
+           android:id="@+id/tvDate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:clickable="true"
+           android:onClick="DateSelect"
+           android:padding="5dp"
+           android:text="Team:"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal" >
+
+           <ImageButton
+               android:id="@+id/btSelectAll"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/selector_checkall"
+               android:text="CheckAll" />
+
+           <ImageButton
+               android:id="@+id/btSend"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/selector_forward"
+               android:text="CheckAll" />
+       </LinearLayout>
+
+       <Spinner
+           android:id="@+id/spItems"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/tvDate"
+           android:layout_alignTop="@+id/linearLayout1"
+           android:layout_toRightOf="@+id/tvDate" />
+
+   </RelativeLayout>
+     <TextView
+            android:id="@+id/tvPull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" >
+
+      
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+   
+
+</LinearLayout>

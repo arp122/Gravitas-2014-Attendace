@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="\n\n\n\n"/>
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess the song?"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+<TextView android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="\n\n\n\n\n"/>
+    <Button
+        android:id="@+id/btOpt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fix You" />
+
+    <Button
+        android:id="@+id/btOpt2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="In the end" />
+
+    <Button
+        android:id="@+id/btOpt3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Paradise" />
+
+    <Button
+        android:id="@+id/btOpt4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Numb" />
+
+</LinearLayout>
